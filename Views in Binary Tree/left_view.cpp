@@ -44,6 +44,11 @@ int32_t main()
     root->right->right = new Node(8);
     root->right->right->left = new Node(9);
     root->right->right->right = new Node(10);
+
+    vector<int> ans;
+    dfs(root, ans, 1);
+    for (auto it : ans)
+        cout << it << " ";
 }
 
 /*///////////////////////////////////////

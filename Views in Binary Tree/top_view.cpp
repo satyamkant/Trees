@@ -47,6 +47,9 @@ void Topview(Node *root)
 
     for (auto it : mp)
         ans.push_back(it.second);
+
+    for (auto it : ans)
+        cout << it << " ";
 }
 
 int32_t main()
@@ -64,6 +67,7 @@ int32_t main()
     root->right->right = new Node(8);
     root->right->right->left = new Node(9);
     root->right->right->right = new Node(10);
+    Topview(root);
 }
 
 /*///////////////////////////////////////
